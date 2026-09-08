@@ -15,14 +15,21 @@ class Endereco {
     required this.uf,
   });
 
-  factory Endereco.fromJson(Map<String, dynamic> json) {
+  factory Endereco.fromJson(
+    Map<String, dynamic> json,
+  ) {
     return Endereco(
       cep: json['cep'] ?? '',
-      logradouro: json['logradouro'] ?? '',
-      complemento: json['complemento'] ?? '',
-      bairro: json['bairro'] ?? '',
-      localidade: json['localidade'] ?? '',
-      uf: json['uf'] ?? '',
+      logradouro:
+          json['logradouro'] ?? '',
+      complemento:
+          json['complemento'] ?? '',
+      bairro:
+          json['bairro'] ?? '',
+      localidade:
+          json['localidade'] ?? '',
+      uf:
+          json['uf'] ?? '',
     );
   }
 }
