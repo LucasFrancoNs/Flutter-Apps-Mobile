@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'models/post.dart';
-import 'services/post_service.dart';
+import 'services/post_services.dart';
 
 void main() {
   runApp(
