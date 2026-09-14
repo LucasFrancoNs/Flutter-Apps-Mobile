@@ -24,15 +24,15 @@ class CarrinhoApp extends StatelessWidget {
         primarySwatch: Colors.teal,
         useMaterial3: true,
       ),
-      home: const CatalogoScreen(),
+      home: CatalogoScreen(),
     );
   }
 }
 
 class CatalogoScreen extends StatelessWidget {
-  const CatalogoScreen({super.key});
+    CatalogoScreen({super.key});
 
-  final List<Produto> _produtos = const [
+  final List<Produto> _produtos =  [
     Produto(id: '1', nome: 'Teclado Mecânico', preco: 250.00),
     Produto(id: '2', nome: 'Mouse Gamer', preco: 120.00),
     Produto(id: '3', nome: 'Monitor 24"', preco: 890.00),
